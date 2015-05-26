@@ -1,8 +1,8 @@
-FROM ubuntu:precise
+FROM ubuntu:trusty
 
 MAINTAINER Daniel Mahlow "dmahlow@gmail.com"
 
-RUN echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt precise main universe multiverse' > /etc/apt/sources.list
+RUN echo 'deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main universe multiverse' > /etc/apt/sources.list
 
 RUN apt-get update
 RUN apt-get -y install apache2 php5 php5-curl php5-mcrypt php5-gd php5-mysql
